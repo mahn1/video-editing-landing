@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CUTLINE — монтаж видео для блогеров и бизнеса</title>
+  <meta name="description" content="Монтаж Reels, Shorts, YouTube-роликов и видео с мероприятий. Первый вариант Reels за 48 часов, 3 правки бесплатно.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="logo"><span class="logo__mark"></span>CUTLINE</a>
+    <nav class="nav" id="nav">
+      <a href="#services">Услуги</a>
+      <a href="#works">Работы</a>
+      <a href="#process">Как работаем</a>
+      <a href="#prices">Цены</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a href="#order" class="btn btn--small header__cta">Обсудить проект</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- Первый экран -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow"><span class="rec"></span> Монтажная студия</p>
+        <h1>Монтаж, который <span class="gradient-text">досматривают до конца</span></h1>
+        <p class="hero__lead">Делаем Reels, Shorts и YouTube-ролики с удержанием внимания с первой секунды. Динамика, субтитры, цвет и звук — под ключ.</p>
+        <div class="hero__actions">
+          <a href="#order" class="btn">Рассчитать стоимость</a>
+          <a href="#works" class="btn btn--ghost">Смотреть работы</a>
+        </div>
+        <ul class="stats">
+          <li><b>48 ч</b><span>первая версия Reels</span></li>
+          <li><b>3</b><span>правки бесплатно</span></li>
+          <li><b>4K</b><span>экспорт в любом формате</span></li>
+        </ul>
+      </div>
+
+      <div class="editor" aria-hidden="true">
+        <div class="editor__bar"><i></i><i></i><i></i><span>project_final_v3.prproj</span></div>
+        <div class="editor__screen">
+          <div class="editor__frame">
+            <div class="editor__subtitle">и вот тут начинается самое интересное</div>
+          </div>
+          <div class="editor__timecode">00:00:<span id="tc">12</span>:08</div>
+        </div>
+        <div class="timeline">
+          <div class="playhead"></div>
+          <div class="track"><span class="clip c1" style="width:22%"></span><span class="clip c2" style="width:14%"></span><span class="clip c1" style="width:30%"></span><span class="clip c3" style="width:20%"></span></div>
+          <div class="track"><span class="gap" style="width:10%"></span><span class="clip c4" style="width:18%"></span><span class="gap" style="width:16%"></span><span class="clip c4" style="width:24%"></span></div>
+          <div class="track track--audio"><span class="wave" style="width:94%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section__title">Что монтируем</h2>
+      <div class="services">
+        <article class="card">
+          <div class="card__icon">📱</div>
+          <h3>Reels и Shorts</h3>
+          <p>Вертикальные ролики до 90 секунд: хук в первые 2 секунды, динамичные склейки, анимированные субтитры.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">▶️</div>
+          <h3>YouTube-ролики</h3>
+          <p>Влоги, обзоры, обучающие видео. Чистим паузы и оговорки, добавляем графику, музыку и цветокоррекцию.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🎉</div>
+          <h3>Мероприятия</h3>
+          <p>Свадьбы, корпоративы, конференции. Короткий тизер на следующий день и полный фильм за неделю.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">💼</div>
+          <h3>Реклама и продукт</h3>
+          <p>Ролики для таргета и маркетплейсов: несколько версий под разные площадки и форматы из одного исходника.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Работы -->
+  <section class="section section--alt" id="works">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Работы</h2>
+        <div class="chips" id="works-filter">
+          <button class="chip is-active" data-filter="all">Все</button>
+          <button class="chip" data-filter="reels">Reels</button>
+          <button class="chip" data-filter="youtube">YouTube</button>
+          <button class="chip" data-filter="event">Мероприятия</button>
+        </div>
+      </div>
+      <div class="works" id="works-grid">
+        <a class="work work--tall" data-type="reels" href="#order"><div class="work__thumb t1"><span class="play"></span></div><div class="work__meta"><b>Кофейня «Зерно»</b><span>Reels · 0:32</span></div></a>
+        <a class="work" data-type="youtube" href="#order"><div class="work__thumb t2"><span class="play"></span></div><div class="work__meta"><b>Обзор горного маршрута</b><span>YouTube · 14:05</span></div></a>
+        <a class="work" data-type="event" href="#order"><div class="work__thumb t3"><span class="play"></span></div><div class="work__meta"><b>Свадебный тизер</b><span>Мероприятие · 1:45</span></div></a>
+        <a class="work work--tall" data-type="reels" href="#order"><div class="work__thumb t4"><span class="play"></span></div><div class="work__meta"><b>Фитнес-тренер</b><span>Reels · 0:45</span></div></a>
+        <a class="work" data-type="youtube" href="#order"><div class="work__thumb t5"><span class="play"></span></div><div class="work__meta"><b>Подкаст об IT</b><span>YouTube · 52:10</span></div></a>
+        <a class="work" data-type="event" href="#order"><div class="work__thumb t6"><span class="play"></span></div><div class="work__meta"><b>Конференция DataDay</b><span>Мероприятие · 3:20</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Процесс -->
+  <section class="section" id="process">
+    <div class="container">
+      <h2 class="section__title">Как работаем</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Бриф</h3><p>Обсуждаем задачу, референсы и площадку. Фиксируем цену и срок.</p></li>
+        <li><span>02</span><h3>Исходники</h3><p>Вы присылаете материал через любое облако — мы проверяем, что всего хватает.</p></li>
+        <li><span>03</span><h3>Черновой монтаж</h3><p>Показываем первую версию: структура, ритм, ключевые моменты.</p></li>
+        <li><span>04</span><h3>Правки и сдача</h3><p>Три круга правок включены. Отдаём файлы под все нужные форматы.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Цены -->
+  <section class="section section--alt" id="prices">
+    <div class="container">
+      <h2 class="section__title">Цены</h2>
+      <div class="tabs" role="tablist" id="price-tabs">
+        <button class="tab is-active" data-tab="reels" role="tab">Reels / Shorts</button>
+        <button class="tab" data-tab="youtube" role="tab">YouTube</button>
+        <button class="tab" data-tab="event" role="tab">Мероприятия</button>
+      </div>
+      <div class="prices" id="prices-grid"></div>
+      <p class="note">Точная стоимость зависит от объёма исходников и сложности графики — назовём её после брифа.</p>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Отзывы</h2>
+      <div class="reviews">
+        <blockquote class="review">
+          <p>«Отдала 40 минут сырого видео, через два дня получила 6 Reels с субтитрами. Один набрал 120 тысяч просмотров.»</p>
+          <footer><b>Анна</b> · блог о выпечке</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p>«Смонтировали свадебный фильм так, что гости пересматривают. Тизер прислали уже на следующий вечер.»</p>
+          <footer><b>Илья и Марина</b> · свадьба</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p>«Перевели наш подкаст на нормальный уровень: звук, обложки, нарезки. Работаем третий месяц.»</p>
+          <footer><b>Дмитрий</b> · IT-подкаст</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Вопросы -->
+  <section class="section section--alt" id="faq">
+    <div class="container container--narrow">
+      <h2 class="section__title">Частые вопросы</h2>
+      <details class="faq" open>
+        <summary>Как передать исходники?</summary>
+        <p>Через Яндекс Диск, Google Drive или облако Mail. Если файлов много — пришлём ссылку на загрузку к нам.</p>
+      </details>
+      <details class="faq">
+        <summary>Сколько правок входит в стоимость?</summary>
+        <p>Три круга правок. Дальнейшие — по договорённости, обычно это 10–15% от стоимости ролика.</p>
+      </details>
+      <details class="faq">
+        <summary>Работаете по договору?</summary>
+        <p>Да, работаем как самозанятые: договор, чек, оплата 50% до начала работ и 50% после сдачи.</p>
+      </details>
+      <details class="faq">
+        <summary>Можно ли с вашей музыкой?</summary>
+        <p>Можно. Если своей нет — подберём трек из лицензионной библиотеки, чтобы ролик не заблокировали.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Заявка -->
+  <section class="section order" id="order">
+    <div class="container order__inner">
+      <div>
+        <h2 class="section__title">Обсудим ваш проект</h2>
+        <p class="order__lead">Оставьте контакт — в течение часа пришлём примеры под вашу нишу и предварительную цену.</p>
+        <ul class="order__perks">
+          <li>Бесплатный тестовый фрагмент до 15 секунд</li>
+          <li>Ответ в рабочее время — до 1 часа</li>
+          <li>Оплата частями: 50% / 50%</li>
+        </ul>
+      </div>
+      <form class="form" id="order-form" novalidate>
+        <label>Имя<input name="name" type="text" placeholder="Как к вам обращаться" required></label>
+        <label>Telegram или телефон<input name="contact" type="text" placeholder="@username или +7..." required></label>
+        <label>Что нужно смонтировать
+          <select name="type">
+            <option>Reels / Shorts</option>
+            <option>YouTube-ролик</option>
+            <option>Мероприятие</option>
+            <option>Реклама</option>
+            <option>Пока не знаю</option>
+          </select>
+        </label>
+        <label>Комментарий<textarea name="comment" rows="3" placeholder="Сколько роликов, сроки, ссылка на референс"></textarea></label>
+        <button class="btn btn--full" type="submit">Отправить заявку</button>
+        <p class="form__hint">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+        <div class="form__success" hidden>
+          <b>Заявка отправлена 🎬</b>
+          <span>Скоро напишем вам. А пока можно посмотреть наши работы.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#" class="logo"><span class="logo__mark"></span>CUTLINE</a>
+    <p>Демо-лендинг для портфолио. Студия, отзывы и контакты вымышлены.</p>
+    <p>© 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
